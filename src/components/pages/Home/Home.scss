@@ -25,24 +25,14 @@
   }
 
   &_projects {
-    width: 100%;
-    height: 70vh;
-    max-height: 500px;
-    display: flex;
-    overflow-x: scroll;
-
     &_card {
+      height: 50vh;
+      max-height: 500px;
       background-color: $anthracite-grey;
       color: $off-white;
-      min-width: 70%;
-      height: 100%;
-      margin-right: 15px;
       border-radius: 10px;
-      padding: 60px 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
       position: relative;
+      cursor: pointer;
 
       &_image {
         width: 100%;
@@ -56,9 +46,13 @@
       }
 
       &_informations {
-        position: relative;
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        bottom: 40px;
+
         &_date {
-          font-size: 1.2rem;
+          font-size: 1rem;
           text-transform: uppercase;
           padding-bottom: 15px;
         }
@@ -68,10 +62,23 @@
         }
 
         &_tagline {
-          font-size: 2rem;
+          font-size: 1.5rem;
           font-weight: lighter;
         }
       }
     }
+  }
+}
+
+// custom style for react-slick
+.slick {
+  &-slide {
+    margin-bottom: 25px;
+  }
+  &-dots {
+    bottom: 0;
+  }
+  &-slide > div {
+    padding: 0 5px;
   }
 }

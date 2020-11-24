@@ -1,10 +1,25 @@
 import React from "react";
-// import Slider from "react-slick";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import allProjects from "../../../data/allProjectArray";
 
 import "./Home.scss";
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 7000,
+    arrows: false,
+    slidesToShow: 1,
+  };
+
   return (
     <div className="home">
       <div className="home_header">
@@ -13,7 +28,7 @@ export default function Home() {
         </h2>
         <h3 className="home_header_subtitle">A la recherche d'un emploi</h3>
       </div>
-      <div className="home_projects">
+      <Slider {...settings}>
         {allProjects.map((project) => (
           <div key={project.name} className="home_projects_card">
             <img
@@ -34,7 +49,7 @@ export default function Home() {
             </div>
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 }
