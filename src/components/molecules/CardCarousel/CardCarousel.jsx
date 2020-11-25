@@ -6,7 +6,7 @@ import "./CardCarousel.scss";
 export default function CardCarousel({ url, name, poster, date, tagline }) {
   return (
     <div key={name} className="carousel_card">
-      <HashLink to={`/projets/${url}`}>
+      <HashLink to={`/projets/${url}/#`}>
         <img
           className="carousel_card_image"
           src={`${process.env.PUBLIC_URL}/images/${poster}`}

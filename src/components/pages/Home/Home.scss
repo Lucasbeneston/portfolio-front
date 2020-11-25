@@ -30,6 +30,20 @@
       text-transform: uppercase;
     }
   }
+
+  &_allProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    &_link {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      padding: 5px 0;
+      border-bottom: 1px solid black;
+    }
+  }
 }
 
 // custom style for react-slick

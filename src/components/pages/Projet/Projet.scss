@@ -1,0 +1,56 @@
+@import "../../_settings/variables";
+@import "../../_settings/mixins";
+
+.projet {
+  padding-top: 50px;
+  width: 100%;
+
+  &_header {
+    padding: 40px 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_date {
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding-bottom: 15px;
+    }
+
+    &_name {
+      font-size: 2.75rem;
+      margin-bottom: 5px;
+    }
+
+    &_tagline {
+      font-size: 1.75rem;
+      line-height: 2rem;
+      font-weight: lighter;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+
+  &_poster {
+    height: 70vh;
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    background-color: $anthracite-grey;
+  }
+
+  &_informations {
+    padding: 10px 5vw;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  &_description {
+    padding: 30px 5vw 40px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  &_images {
+    padding: 2.5vw 5vw;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../_settings/variables";
+@import "../../_settings/mixins";
+
+.projets {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding: 0 0 10px;
+    margin: 50px 10vw;
+  }
+
+  &_card {
+    margin: 0 5vw 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_image {
+      height: 35vh;
+      max-height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &_name {
+      font-size: 1.75rem;
+      text-transform: uppercase;
+      margin: 10px 0 5px;
+    }
+
+    &_tagline {
+      width: 80%;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      font-weight: lighter;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}

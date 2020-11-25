@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { HashLink } from "react-router-hash-link";
 import allProjects from "../../../data/allProjectArray";
 import CardCarousel from "../../molecules/CardCarousel/CardCarousel";
 
@@ -31,16 +32,23 @@ export default function Home() {
         <h3 className="home_header_subtitle">A la recherche d'un emploi</h3>
       </div>
       <Slider {...settings}>
-        {allProjects.map((project) => (
-          <CardCarousel
-            url={project.url}
-            name={project.name}
-            poster={project.poster}
-            date={project.date}
-            tagline={project.tagline}
-          />
-        ))}
+        {allProjects
+          .map((project) => (
+            <CardCarousel
+              url={project.url}
+              name={project.name}
+              poster={project.poster}
+              date={project.date}
+              tagline={project.tagline}
+            />
+          ))
+          .slice(0, 4)}
       </Slider>
+      <div className="home_allProjects">
+        <HashLink to="/projets/#" className="home_allProjects_link">
+          Tous mes projets
+        </HashLink>
+      </div>
     </div>
   );
 }

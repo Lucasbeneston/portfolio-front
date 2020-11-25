@@ -1,14 +1,16 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Projets from "./pages/Projets/Projets";
+import ProjetsList from "./pages/ProjetsList/ProjetsList";
+import Projet from "./pages/Projet/Projet";
 import NoMatch from "./pages/NoMatch/NoMatch";
 
 export default function Routes() {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/projets" component={Projets} />
+      <Route exact path="/projets" component={ProjetsList} />
+      <Route exact path="/projets/:urlName" component={Projet} />
       <Route path="*" component={NoMatch} />
     </Switch>
   );
