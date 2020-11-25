@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
+import allProjects from "../../../data/allProjectArray";
+import CardCarousel from "../../molecules/CardCarousel/CardCarousel";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import allProjects from "../../../data/allProjectArray";
-
 import "./Home.scss";
 
 export default function Home() {
@@ -14,10 +14,12 @@ export default function Home() {
     centerMode: true,
     infinite: true,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 7000,
+    pauseOnHover: true,
+    speed: 1000,
+    autoplaySpeed: 6000,
     arrows: false,
     slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   return (
@@ -30,24 +32,13 @@ export default function Home() {
       </div>
       <Slider {...settings}>
         {allProjects.map((project) => (
-          <div key={project.name} className="home_projects_card">
-            <img
-              className="home_projects_card_image"
-              src={`${process.env.PUBLIC_URL}/images/${project.poster}`}
-              alt={`Illustration du projet ${project.name}`}
-            />
-            <div className="home_projects_card_informations">
-              <h4 className="home_projects_card_informations_date">
-                {project.date}
-              </h4>
-              <h3 className="home_projects_card_informations_name">
-                {project.name}
-              </h3>
-              <p className="home_projects_card_informations_tagline">
-                {project.tagline}
-              </p>
-            </div>
-          </div>
+          <CardCarousel
+            url={project.url}
+            name={project.name}
+            poster={project.poster}
+            date={project.date}
+            tagline={project.tagline}
+          />
         ))}
       </Slider>
     </div>

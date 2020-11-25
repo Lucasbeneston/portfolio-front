@@ -1,6 +1,12 @@
 @import "../../_settings/variables";
 @import "../../_settings/mixins";
 
+@font-face {
+  font-family: "Orkney";
+  src: local("Orkney"),
+    url(../../../fonts/Orkney_Regular.ttf) format("truetype");
+}
+
 .home {
   padding-top: 50px;
   width: 100%;
@@ -15,6 +21,7 @@
 
     &_title {
       font-size: 3rem;
+      font-family: "Orkney";
     }
 
     &_subtitle {
@@ -23,62 +30,17 @@
       text-transform: uppercase;
     }
   }
-
-  &_projects {
-    &_card {
-      height: 50vh;
-      max-height: 500px;
-      background-color: $anthracite-grey;
-      color: $off-white;
-      border-radius: 10px;
-      position: relative;
-      cursor: pointer;
-
-      &_image {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        object-fit: cover;
-        border-radius: 10px;
-        opacity: 0.5;
-      }
-
-      &_informations {
-        width: 80%;
-        position: absolute;
-        left: 10%;
-        bottom: 40px;
-
-        &_date {
-          font-size: 1rem;
-          text-transform: uppercase;
-          padding-bottom: 15px;
-        }
-
-        &_name {
-          font-size: 2.5rem;
-        }
-
-        &_tagline {
-          font-size: 1.5rem;
-          font-weight: lighter;
-        }
-      }
-    }
-  }
 }
 
 // custom style for react-slick
 .slick {
   &-slide {
     margin-bottom: 25px;
+    & > div {
+      padding: 0 5px;
+    }
   }
   &-dots {
     bottom: 0;
-  }
-  &-slide > div {
-    padding: 0 5px;
   }
 }

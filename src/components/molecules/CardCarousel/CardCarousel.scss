@@ -1,0 +1,47 @@
+@import "../../_settings/variables";
+@import "../../_settings/mixins";
+
+.carousel {
+  &_card {
+    height: 50vh;
+    max-height: 500px;
+    background-color: $anthracite-grey;
+    color: $off-white;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+
+    &_image {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0.5;
+    }
+
+    &_informations {
+      width: 80%;
+      position: absolute;
+      left: 10%;
+      bottom: 40px;
+
+      &_date {
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+      }
+
+      &_name {
+        font-size: 2.5rem;
+      }
+
+      &_tagline {
+        font-size: 1.5rem;
+        font-weight: lighter;
+      }
+    }
+  }
+}
