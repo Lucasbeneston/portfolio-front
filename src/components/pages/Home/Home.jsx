@@ -35,6 +35,7 @@ export default function Home() {
         {allProjects
           .map((project) => (
             <CardCarousel
+              key={project.name}
               url={project.url}
               name={project.name}
               poster={project.poster}
@@ -42,11 +43,11 @@ export default function Home() {
               tagline={project.tagline}
             />
           ))
-          .slice(0, 4)}
+          .slice(0, 3)}
       </Slider>
       <div className="home_allProjects">
         <HashLink to="/projets/#" className="home_allProjects_link">
-          Tous mes projets
+          Découvrir mes projets
         </HashLink>
       </div>
     </div>

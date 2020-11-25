@@ -22,19 +22,127 @@
   &_burger {
     position: absolute;
     right: 20px;
-    height: 15px;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
+    height: 20px;
+    width: 20px;
     cursor: pointer;
+    // background-color: rgb(219, 219, 219);
+    outline: none;
+    transition: height 0.5s ease;
 
-    &_line_top,
-    &_line_bottom {
-      height: 1px;
-      background-color: black;
-      width: 30px;
+    &.open {
+      height: 15px;
+    }
+
+    &_line_left {
+      background-color: $anthracite-grey;
+      height: 4px;
+      width: 4px;
+      border-radius: 5px;
+      position: absolute;
+      transition: 0.5s ease;
+      bottom: 50%;
+      transform: translate(0%, 50%);
+
+      &.open {
+        bottom: 100%;
+        transform: translate(0%, 100%);
+      }
+    }
+
+    &_line_middle {
+      background-color: $anthracite-grey;
+      height: 4px;
+      width: 4px;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      transition: 0.5s ease;
+      z-index: 100;
+    }
+
+    &_line_right {
+      background-color: $anthracite-grey;
+      height: 4px;
+      width: 4px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 50%;
+      right: 0;
+      transform: translate(0%, 50%);
+      transition: 0.5s ease;
+
+      &.open {
+        bottom: 0%;
+        transform: translate(0%, 0%);
+      }
+    }
+
+    &_line_bottom_left {
+      background-color: $anthracite-grey;
+      height: 4px;
+      width: 4px;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      transition: 0.5s ease;
+
+      &.open {
+        bottom: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+      }
+    }
+
+    &_line_top_right {
+      background-color: $anthracite-grey;
+      height: 4px;
+      width: 4px;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      transition: 0.5s ease;
+
+      &.open {
+        bottom: 100%;
+        left: 100%;
+        transform: translate(-100%, 100%);
+      }
+    }
+
+    &:hover {
+      .nav_burger_line_left {
+        height: 0px;
+        width: 0px;
+        transition: 0.5s ease;
+        &.open {
+          height: 4px;
+          width: 4px;
+        }
+      }
+      .nav_burger_line_middle {
+        height: 10px;
+        width: 10px;
+        transition: 0.5s ease;
+        &.open {
+          height: 8px;
+          width: 8px;
+        }
+      }
+      .nav_burger_line_right {
+        height: 0px;
+        width: 0px;
+        transition: 0.5s ease;
+        &.open {
+          height: 4px;
+          width: 4px;
+        }
+      }
     }
   }
 }
