@@ -25,6 +25,13 @@ export default function MenuSlide({ onClick, open }) {
           <div className="menu_footer_informations_socials">
             <a href="https://www.linkedin.com/in/beneston-lucas/">Linkedin</a>
             <a href="https://github.com/Lucasbeneston">Github</a>
+            <a
+              href={`${process.env.PUBLIC_URL}/images/CV-dev-front-BENESTON-Lucas.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
           </div>
         </div>
         <h5 className="menu_footer_copy">&copy; 2020 - Lucas BENESTON</h5>

@@ -8,10 +8,11 @@
   width: 20px;
   cursor: pointer;
   outline: none;
-  transition: height 0.25s ease;
+  transition: height 0.25s ease, width 0.25s ease;
 
   &.open {
-    height: 15px;
+    height: 14px;
+    width: 18px;
   }
 
   &_line_left {
