@@ -1,5 +1,13 @@
 import React from "react";
-import Spotify from "../../atoms/SVG/Spotify";
+import JavaScriptSVG from "../../atoms/SVG/JavaScriptSVG";
+import SassSVG from "../../atoms/SVG/SassSVG";
+import NodeSVG from "../../atoms/SVG/NodeSVG";
+import ReactSVG from "../../atoms/SVG/ReactSVG";
+import SqlSVG from "../../atoms/SVG/SqlSVG";
+import ESLintSVG from "../../atoms/SVG/ESLintSVG";
+import MochaSVG from "../../atoms/SVG/MochaSVG";
+import ExpressSVG from "../../atoms/SVG/ExpressSVG";
+
 import "./Informations.scss";
 
 export default function Informations() {
@@ -35,40 +43,40 @@ export default function Informations() {
           <h4 className="informations_about_title">💻 Technologies</h4>
           <div className="informations_about_technologies">
             <div className="informations_about_technologies_item">
-              <Spotify />
+              <JavaScriptSVG />
               <h5>Javascript</h5>
             </div>
             <div className="informations_about_technologies_item">
-              <Spotify />
+              <ReactSVG />
               <h5>React</h5>
             </div>
             <div className="informations_about_technologies_item">
-              <Spotify />
+              <SassSVG />
               <h5>Sass | Scss</h5>
             </div>
             <div className="informations_about_technologies_item">
-              <Spotify />
+              <NodeSVG />
               <h5>Node</h5>
             </div>
 
             <div className="informations_about_technologies_item">
-              <Spotify />
+              <ReactSVG />
               <h5>React-Native</h5>
             </div>
             <div className="informations_about_technologies_item">
-              <Spotify />
+              <SqlSVG />
               <h5>SQL</h5>
             </div>
             <div className="informations_about_technologies_item">
-              <Spotify />
+              <ExpressSVG />
               <h5>Express</h5>
             </div>
             <div className="informations_about_technologies_item">
-              <Spotify />
+              <ESLintSVG />
               <h5>ESLint</h5>
             </div>
             <div className="informations_about_technologies_item">
-              <Spotify />
+              <MochaSVG />
               <h5>Mocha | Chaï</h5>
             </div>
           </div>
