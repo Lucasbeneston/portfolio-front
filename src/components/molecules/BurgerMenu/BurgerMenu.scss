@@ -1,0 +1,73 @@
+@import "../../_settings/variables";
+@import "../../_settings/mixins";
+
+.burger {
+  position: absolute;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: height 0.25s ease;
+
+  &.open {
+    height: 15px;
+  }
+
+  &_line_left {
+    @include burger-ronded-item;
+    bottom: 50%;
+    transform: translate(0%, 50%);
+
+    &.open {
+      bottom: 100%;
+      transform: translate(0%, 100%);
+    }
+  }
+
+  &_line_middle {
+    @include burger-ronded-item;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 100;
+  }
+
+  &_line_right {
+    @include burger-ronded-item;
+    bottom: 50%;
+    right: 0;
+    transform: translate(0%, 50%);
+
+    &.open {
+      bottom: 0%;
+      transform: translate(0%, 0%);
+    }
+  }
+
+  &_line_bottom_left {
+    @include burger-ronded-item;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    &.open {
+      bottom: 0%;
+      left: 0%;
+      transform: translate(0%, 0%);
+    }
+  }
+
+  &_line_top_right {
+    @include burger-ronded-item;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    &.open {
+      bottom: 100%;
+      left: 100%;
+      transform: translate(-100%, 100%);
+    }
+  }
+}
