@@ -1,0 +1,31 @@
+@import "../../_settings/variables";
+@import "../../_settings/mixins";
+
+.noMatch {
+  padding-top: 50px;
+  padding: 50px 15vw 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &_oops {
+    font-size: 4rem;
+  }
+
+  &_informations {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &_button {
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: $anthracite-grey;
+    color: $off-white;
+  }
+}

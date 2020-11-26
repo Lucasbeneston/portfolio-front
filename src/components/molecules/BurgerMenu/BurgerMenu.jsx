@@ -17,8 +17,6 @@ export default function BurgerMenu({ onClick, open }) {
       <div className={`burger_line_bottom_left ${open ? "open" : ""}`} />
       <div className={`burger_line_top_right ${open ? "open" : ""}`} />
       <div className={`burger_line_right ${open ? "open" : ""}`} />
-
-      <div className="nav_burger_line_open_left" />
     </div>
   );
 }
