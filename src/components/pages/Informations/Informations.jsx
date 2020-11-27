@@ -58,7 +58,6 @@ export default function Informations() {
               <NodeSVG />
               <h5>Node</h5>
             </div>
-
             <div className="informations_about_technologies_item">
               <ReactSVG />
               <h5>React-Native</h5>
