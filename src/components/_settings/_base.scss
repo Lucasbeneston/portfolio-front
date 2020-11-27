@@ -17,10 +17,10 @@ body {
 
   &::-webkit-scrollbar {
     width: 10px;
-    background-color: grey;
+    background-color: $off-white;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
+    background-color: $light-grey;
   }
 }

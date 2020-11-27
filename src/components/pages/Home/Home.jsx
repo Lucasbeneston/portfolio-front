@@ -1,50 +1,31 @@
-import React from "react";
-import Slider from "react-slick";
+import React, { useState, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
-import allProjects from "../../../data/allProjectArray";
-import CardCarousel from "../../molecules/CardCarousel/CardCarousel";
+import ProjectsSlider from "../../organisms/ProjectsSlider/ProjectsSlider";
+import ProjectsList from "../../organisms/ProjectsList/ProjectsList";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
 
 export default function Home() {
-  const settings = {
-    dots: true,
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    autoplay: true,
-    pauseOnHover: true,
-    speed: 1000,
-    autoplaySpeed: 6000,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const updateWindowDimensions = () => {
+      const newWidth = window.innerWidth;
+      setWidth(newWidth);
+    };
+    window.addEventListener("resize", updateWindowDimensions);
+    return () => window.removeEventListener("resize", updateWindowDimensions);
+  }, []);
 
   return (
     <div className="home">
       <div className="home_header">
         <h2 className="home_header_title">
-          Développeur Front-end React et React-native
+          Développeur Front-End React et React-native
         </h2>
         <h3 className="home_header_subtitle">A la recherche d'un emploi</h3>
       </div>
-      <Slider {...settings}>
-        {allProjects
-          .map((project) => (
-            <CardCarousel
-              key={project.name}
-              url={project.url}
-              name={project.name}
-              poster={project.poster}
-              date={project.date}
-              tagline={project.tagline}
-            />
-          ))
-          .slice(0, 3)}
-      </Slider>
+      {width < 769 ? <ProjectsSlider /> : <ProjectsList endArray={4} />}
       <div className="home_allProjects">
         <HashLink to="/projets/#" className="home_allProjects_link">
           Découvrir mes projets

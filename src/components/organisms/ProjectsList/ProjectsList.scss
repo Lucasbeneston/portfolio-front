@@ -1,0 +1,58 @@
+@import "../../_settings/variables";
+@import "../../_settings/mixins";
+
+.projectsList {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 5%;
+
+  @include media(tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &_card {
+    margin: 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @include media(tablet) {
+      width: 45%;
+      margin: 0 1% 50px;
+    }
+
+    &_image {
+      height: 35vh;
+      max-height: 300px;
+      width: 100%;
+      object-fit: cover;
+
+      @include media(tablet) {
+        height: 45vh;
+        max-height: 400px;
+      }
+    }
+
+    &_name {
+      font-size: 2rem;
+      margin: 10px 0 5px;
+    }
+
+    &_tagline {
+      width: 80%;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      font-weight: lighter;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}

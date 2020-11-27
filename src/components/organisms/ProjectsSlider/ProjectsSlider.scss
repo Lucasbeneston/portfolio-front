@@ -1,0 +1,12 @@
+// custom style for react-slick
+.slick {
+  &-slide {
+    margin-bottom: 25px;
+    & > div {
+      padding: 0 5px;
+    }
+  }
+  &-dots {
+    bottom: 0;
+  }
+}

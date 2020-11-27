@@ -88,12 +88,12 @@ const projects = [
   },
 
   {
-    id: 4,
-    name: "AirBnb clone",
-    url: "airbnb-clone",
-    tagline: "Reproduction des certaines fonctionnalités de AirBnb",
+    id: 5,
+    name: "Netflix",
+    url: "netflix-clone",
+    tagline: "Reproduction des certaines fonctionnalités de Netflix",
     client: "Projet de formation",
-    technology: ["React", "Node", "Sass", "ESLint"],
+    technology: ["React", "Node", "Sass"],
     repository: "Privé",
     link: "Non publié",
     description:

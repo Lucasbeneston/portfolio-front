@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import ProjetsList from "./pages/ProjetsList/ProjetsList";
+import ProjetsList from "./pages/Projects/Projects";
 import Projet from "./pages/Projet/Projet";
 import Informations from "./pages/Informations/Informations";
 import NoMatch from "./pages/NoMatch/NoMatch";
