@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
+import MenuContext from "../../../contexts/MenuContext";
 import animation from "./HomeAnimations";
 import ProjectsSlider from "../../organisms/ProjectsSlider/ProjectsSlider";
 
 import "./Home.scss";
 
 export default function Home() {
+  const context = useContext(MenuContext);
+  const { open } = context;
+
   const [width, setWidth] = useState(window.innerWidth);
   const animationHome = animation;
 
@@ -25,7 +29,7 @@ export default function Home() {
   }, [width, animationHome]);
 
   return (
-    <div className="home">
+    <div className={`home ${open ? "open" : ""}`}>
       <div className="home_header">
         <div className="home_header_container">
           <h2 className="home_header_container_title">

@@ -12,6 +12,14 @@
   text-transform: uppercase;
   font-size: 1.1rem;
   background-color: $off-white;
+  transition: width 0.5s ease-in-out;
+
+  @include media(tablet) {
+    &.open {
+      width: 75%;
+      transition: width 0.5s ease-in-out;
+    }
+  }
 
   &_copyright {
     font-size: 0.8rem;

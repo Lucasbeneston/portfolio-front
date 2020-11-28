@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+import MenuContext from "../../../contexts/MenuContext";
+
 import JavaScriptSVG from "../../atoms/SVG/JavaScriptSVG";
 import SassSVG from "../../atoms/SVG/SassSVG";
 import NodeSVG from "../../atoms/SVG/NodeSVG";
@@ -11,8 +13,11 @@ import ExpressSVG from "../../atoms/SVG/ExpressSVG";
 import "./Informations.scss";
 
 export default function Informations() {
+  const context = useContext(MenuContext);
+  const { open } = context;
+
   return (
-    <div className="informations">
+    <div className={`informations ${open ? "open" : ""}`}>
       <div className="informations_header">
         <h2 className="informations_header_title">
           Développeur Front-end React et React-native

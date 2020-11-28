@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
+import MenuContext from "../../../contexts/MenuContext";
 import allProjects from "../../../data/allProjectArray";
 
 import "./Projet.scss";
 
 export default function Projet() {
+  const context = useContext(MenuContext);
+  const { open } = context;
+
   const { urlName } = useParams();
   const project = allProjects.find((projet) => projet.url === urlName);
 
   return (
-    <div className="projet">
+    <div className={`projet ${open ? "open" : ""}`}>
       <div className="projet_header">
         <h3 className="projet_header_date">
           {project.type} - {project.date}

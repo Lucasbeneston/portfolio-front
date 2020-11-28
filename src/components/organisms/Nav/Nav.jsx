@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { HashLink } from "react-router-hash-link";
+import MenuContext from "../../../contexts/MenuContext";
 import BurgerMenu from "../../molecules/BurgerMenu/BurgerMenu";
 import MenuSlide from "../../molecules/MenuSlide/MenuSlide";
 
 import "./Nav.scss";
 
 export default function Nav() {
-  const [open, setOpen] = useState(false);
+  const context = useContext(MenuContext);
+  const { open, setOpen } = context;
 
   const switchOpen = () => {
     setOpen(!open);

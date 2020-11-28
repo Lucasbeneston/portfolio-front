@@ -16,6 +16,10 @@
   transition: transform 0.5s ease-in-out;
 
   @include media(tablet) {
+    transform: translateX(100%);
+  }
+
+  @include media(tablet) {
     width: 25%;
     left: 75%;
     padding: 0;
@@ -23,6 +27,10 @@
 
   &.open {
     transform: translateY(0%);
+
+    @include media(tablet) {
+      transform: translateX(0%);
+    }
   }
 
   &_links {

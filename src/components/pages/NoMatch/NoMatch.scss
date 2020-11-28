@@ -10,6 +10,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: width 0.5s ease-in-out;
+
+  @include media(tablet) {
+    &.open {
+      width: 75%;
+      transition: width 0.5s ease-in-out;
+    }
+  }
 
   &_oops {
     font-size: 4rem;
