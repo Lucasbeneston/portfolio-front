@@ -13,12 +13,16 @@
   padding: 0 7.5vw;
   background-color: $anthracite-grey;
   color: $off-white;
-  opacity: 0;
-  transition: transform 0.5s ease, opacity 0.75s ease;
+  transition: transform 0.5s ease-in-out;
+
+  @include media(tablet) {
+    width: 25%;
+    left: 75%;
+    padding: 0;
+  }
 
   &.open {
     transform: translateY(0%);
-    opacity: 1;
   }
 
   &_links {
@@ -28,20 +32,30 @@
     justify-content: space-evenly;
     height: 60%;
     border-bottom: 1px solid $light-grey;
+    padding: 15% 0;
+
+    @include media(tablet) {
+      height: 70%;
+      padding: 20% 0;
+    }
 
     & a {
       font-size: 2rem;
       text-transform: uppercase;
-      padding: 5px 10px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       @include media(tablet) {
+        font-size: 1.75rem;
         opacity: 0.75;
         transition: 0.5s ease;
 
         &:hover {
           opacity: 1;
-          transform: scale(1.2);
-          border-bottom: 1px solid $off-white;
+          transform: translateX(-10px);
         }
       }
     }
@@ -56,6 +70,10 @@
     height: 40%;
     padding: 0 0 25px;
     font-size: 1.4rem;
+
+    @include media(tablet) {
+      height: 30%;
+    }
 
     &_informations {
       height: 80%;

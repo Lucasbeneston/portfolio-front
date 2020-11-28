@@ -9,12 +9,29 @@
   align-items: center;
   position: fixed;
   z-index: 100;
-  transition: color 0.25s ease, background-color 0.25s ease;
+  transition: color 0.5s ease-in-out,
+    background-color 0.5s ease-in-out width 0.5s ease-in-out,
+    width 0.5s ease-in-out;
+
+  @include media(tablet) {
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out,
+      width 0.5s ease-in-out;
+    right: 0;
+    width: 100%;
+  }
 
   &.open {
     background-color: $anthracite-grey;
     color: $off-white;
-    transition: color 0.5s ease, background-color 0.25s ease;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out,
+      width 0.5s ease-in-out;
+
+    @include media(tablet) {
+      transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out,
+        width 0.5s ease-in-out;
+      right: 0;
+      width: 25%;
+    }
   }
 
   &_title {
