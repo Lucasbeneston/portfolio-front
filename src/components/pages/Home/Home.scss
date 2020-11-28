@@ -10,11 +10,18 @@
 @keyframes fadein {
   0% {
     opacity: 0;
-    height: 5vh;
+    height: 8vh;
     width: auto;
   }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+
   100% {
-    opacity: 0.9;
+    opacity: 0;
   }
 }
 
@@ -68,8 +75,7 @@
         position: absolute;
         height: 20vh;
         width: auto;
-        animation: fadein 0.5s;
-        opacity: 0.9;
+        animation: fadein 1.6s;
       }
     }
 
