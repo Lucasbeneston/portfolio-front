@@ -7,9 +7,48 @@
     url(../../../fonts/Orkney_Regular.ttf) format("truetype");
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    height: 5vh;
+    width: auto;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  from {
+    bottom: 40%;
+    opacity: 0;
+  }
+  50% {
+    bottom: 60%;
+    opacity: 1;
+  }
+  to {
+    bottom: 60%;
+    opacity: 0;
+  }
+}
+
+@keyframes bounceLine {
+  from {
+    bottom: 20%;
+  }
+  50% {
+    bottom: 30%;
+  }
+  to {
+    bottom: 20%;
+  }
+}
+
 .home {
   padding-top: 50px;
   width: 100%;
+  overflow: hidden;
 
   &_header {
     display: flex;
@@ -20,36 +59,102 @@
     padding: 40px 20%;
 
     @include media(tablet) {
-      padding: 6vh 30%;
-    }
+      padding: 0 30%;
+      height: calc(90vh - 50px);
+      width: 100%;
+      position: relative;
 
-    &_title {
-      font-size: 3rem;
-      font-family: "Orkney";
-
-      @include media(tablet) {
-        font-size: 4rem;
+      & img {
+        position: absolute;
+        height: 20vh;
+        width: auto;
+        animation: fadein 0.5s;
       }
     }
 
-    &_subtitle {
-      margin-top: 20px;
-      font-size: 1.2rem;
-      text-transform: uppercase;
+    &_container {
+      @include media(tablet) {
+        background-color: $off-white;
+        padding: 40px;
+        z-index: 50;
+      }
+
+      &_title {
+        font-size: 3rem;
+        font-family: "Orkney";
+
+        @include media(tablet) {
+          font-size: 4rem;
+        }
+      }
+
+      &_subtitle {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
     }
   }
 
   &_allProjects {
     display: flex;
     justify-content: center;
+    width: 100%;
     align-items: center;
-    margin: 20px 0 40px;
+    padding: 40px 0;
+    background-color: $off-white;
+    position: relative;
 
     &_link {
       font-size: 1.2rem;
       text-transform: uppercase;
       padding: 5px 0;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $anthracite-grey;
+    }
+  }
+
+  &_scrollDown {
+    @include media(tablet) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      height: 10vh;
+      margin: 0;
+      position: relative;
+
+      &:hover {
+        .home_scrollDown_link,
+        .home_scrollDown_line {
+          -webkit-animation-play-state: paused;
+          -moz-animation-play-state: paused;
+          animation-play-state: paused;
+        }
+      }
+    }
+
+    &_link {
+      @include media(tablet) {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        padding: 5px 0;
+        border-bottom: none;
+        position: absolute;
+        animation: bounce 3s ease infinite;
+        transform: translateY(50%);
+        color: $light-grey;
+      }
+    }
+
+    &_line {
+      @include media(tablet) {
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $light-grey;
+        animation: bounceLine 3s ease infinite;
+      }
     }
   }
 }

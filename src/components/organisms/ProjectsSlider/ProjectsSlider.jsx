@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import PropTypes from "prop-types";
 import allProjects from "../../../data/allProjectArray";
 import CardCarousel from "../../molecules/CardCarousel/CardCarousel";
 
@@ -7,7 +8,7 @@ import "./ProjectsSlider.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function ProjectsSlider() {
+export default function ProjectsSlider({ slidesToShow }) {
   const settings = {
     dots: true,
     className: "center",
@@ -18,12 +19,12 @@ export default function ProjectsSlider() {
     speed: 1000,
     autoplaySpeed: 6000,
     arrows: false,
-    slidesToShow: 1,
+    slidesToShow,
     slidesToScroll: 1,
   };
 
   return (
-    <Slider {...settings}>
+    <Slider id="test" {...settings}>
       {allProjects
         .map((project) => (
           <CardCarousel
@@ -39,3 +40,11 @@ export default function ProjectsSlider() {
     </Slider>
   );
 }
+
+ProjectsSlider.defaultProps = {
+  slidesToShow: 1,
+};
+
+ProjectsSlider.propTypes = {
+  slidesToShow: PropTypes.number,
+};

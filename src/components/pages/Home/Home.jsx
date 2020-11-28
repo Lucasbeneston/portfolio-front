@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
+import animation from "./HomeAnimations";
 import ProjectsSlider from "../../organisms/ProjectsSlider/ProjectsSlider";
-import ProjectsList from "../../organisms/ProjectsList/ProjectsList";
 
 import "./Home.scss";
 
 export default function Home() {
   const [width, setWidth] = useState(window.innerWidth);
+  const animationHome = animation;
 
   useEffect(() => {
     const updateWindowDimensions = () => {
@@ -17,19 +18,39 @@ export default function Home() {
     return () => window.removeEventListener("resize", updateWindowDimensions);
   }, []);
 
+  useEffect(() => {
+    if (width > 769) {
+      animationHome();
+    }
+  }, [width, animationHome]);
+
   return (
     <div className="home">
       <div className="home_header">
-        <h2 className="home_header_title">
-          Développeur Front-End React et React-native
-        </h2>
-        <h3 className="home_header_subtitle">A la recherche d'un emploi</h3>
+        <div className="home_header_container">
+          <h2 className="home_header_container_title">
+            Développeur Front-End React et React-native
+          </h2>
+          <h3 className="home_header_container_subtitle">
+            A la recherche d'un emploi
+          </h3>
+        </div>
       </div>
-      {width < 769 ? <ProjectsSlider /> : <ProjectsList endArray={4} />}
+      {width < 769 ? null : (
+        <div className="home_scrollDown">
+          <HashLink to="/#test" className="home_scrollDown_link">
+            {width < 769 ? null : "Découvrir mes projets"}
+          </HashLink>
+          <div className="home_scrollDown_line" />
+        </div>
+      )}
+
+      {width < 769 ? <ProjectsSlider /> : <ProjectsSlider slidesToShow={2} />}
       <div className="home_allProjects">
         <HashLink to="/projets/#" className="home_allProjects_link">
-          Découvrir mes projets
+          {width < 769 ? "Découvrir mes projets" : "Voir plus de projets"}
         </HashLink>
+        <div className="home_allProjects_line" />
       </div>
     </div>
   );
