@@ -71,27 +71,34 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 20%;
+    padding: 60px 20%;
+    position: relative;
 
     @include media(tablet) {
-      padding: 0 30%;
+      padding: 0 27.5%;
       height: calc(90vh - 50px);
       width: 100%;
       position: relative;
+    }
 
-      & img {
-        position: absolute;
+    & img {
+      position: absolute;
+      height: 15vh;
+      width: auto;
+      animation: fadein 1.6s;
+
+      @include media(tablet) {
         height: 20vh;
-        width: auto;
-        animation: fadein 1.6s;
       }
     }
 
     &_container {
+      background-color: $off-white;
+      z-index: 50;
+      padding: 10px;
+
       @include media(tablet) {
-        background-color: $off-white;
         padding: 40px;
-        z-index: 50;
       }
 
       &_title {

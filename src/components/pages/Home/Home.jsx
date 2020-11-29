@@ -11,22 +11,20 @@ export default function Home() {
   const { open } = context;
 
   const [width, setWidth] = useState(window.innerWidth);
+
   const animationHome = animation;
 
   useEffect(() => {
+    animationHome();
+
     const updateWindowDimensions = () => {
       const newWidth = window.innerWidth;
       setWidth(newWidth);
     };
+
     window.addEventListener("resize", updateWindowDimensions);
     return () => window.removeEventListener("resize", updateWindowDimensions);
-  }, []);
-
-  useEffect(() => {
-    if (width > 769) {
-      animationHome();
-    }
-  }, [width, animationHome]);
+  }, [animationHome]);
 
   return (
     <div className={`home ${open ? "open" : ""}`}>
