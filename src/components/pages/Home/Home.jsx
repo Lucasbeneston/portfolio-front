@@ -40,7 +40,7 @@ export default function Home() {
       </div>
       {width < 769 ? null : (
         <div className="home_scrollDown">
-          <HashLink to="/#test" className="home_scrollDown_link">
+          <HashLink to="#mes-projets" className="home_scrollDown_link">
             {width < 769 ? null : "Découvrir mes projets"}
           </HashLink>
           <div className="home_scrollDown_line" />
@@ -48,6 +48,7 @@ export default function Home() {
       )}
 
       {width < 769 ? <ProjectsSlider /> : <ProjectsSlider slidesToShow={2} />}
+      <div id="mes-projets" />
       <div className="home_allProjects">
         <HashLink to="/projets/#" className="home_allProjects_link">
           {width < 769 ? "Découvrir mes projets" : "Voir plus de projets"}

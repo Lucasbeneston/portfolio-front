@@ -16,13 +16,10 @@
   transition: transform 0.5s ease-in-out;
 
   @include media(tablet) {
-    transform: translateX(100%);
-  }
-
-  @include media(tablet) {
     width: 25%;
     left: 75%;
     padding: 0;
+    transform: translateX(100%);
   }
 
   &.open {

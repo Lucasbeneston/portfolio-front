@@ -27,13 +27,28 @@ export default function Projet() {
         alt={`Illustration du projet ${project.name}`}
       />
       <div className="projet_informations">
-        <h4>Client : {project.client}</h4>
-        <h4>
-          Technos :
-          {project.technology.map((technology) => technology).join(" • ")}
-        </h4>
-        <h4>Lien : {project.link}</h4>
-        <h4>Github : {project.repository}</h4>
+        <div className="projet_informations_link">
+          {project.link !== null ? (
+            <a className="projet_informations_link_true" href={project.link}>
+              Site
+            </a>
+          ) : (
+            <h4 className="projet_informations_link_null">Lien</h4>
+          )}
+          {project.repository !== null ? (
+            <a
+              className="projet_informations_link_true"
+              href={project.repository}
+            >
+              Github
+            </a>
+          ) : (
+            <h4 className="projet_informations_link_null">Github</h4>
+          )}
+        </div>
+        <div className="projet_informations_technologies">
+          {project.technology.map((technology) => technology)}
+        </div>
       </div>
       <div className="projet_description">
         <p>{project.description}</p>

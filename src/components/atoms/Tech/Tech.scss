@@ -1,0 +1,22 @@
+.itemTech {
+  font-size: 1.2rem;
+  width: fit-content;
+  padding: 0 10px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+  margin: 5px;
+
+  & svg {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+  }
+
+  // & h5 {
+  //   font-weight: lighter;
+  // }
+}

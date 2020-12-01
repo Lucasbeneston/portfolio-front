@@ -93,7 +93,7 @@
     }
 
     &_container {
-      background-color: $off-white;
+      // background-color: $off-white;
       z-index: 50;
       padding: 10px;
 
@@ -104,6 +104,8 @@
       &_title {
         font-size: 3rem;
         font-family: "Orkney";
+        text-shadow: $off-white 2px 2px 2px, $off-white -2px 2px 2px,
+          $off-white -2px -2px 2px, $off-white 2px -2px 2px;
 
         @include media(tablet) {
           font-size: 4rem;
@@ -114,6 +116,8 @@
         margin-top: 20px;
         font-size: 1.2rem;
         text-transform: uppercase;
+        text-shadow: $off-white 1px 1px 1px, $off-white -1px 1px 1px,
+          $off-white -1px -1px 1px, $off-white 1px -1px 1px;
       }
     }
   }
@@ -165,6 +169,8 @@
         animation: bounce 3s ease infinite;
         transform: translateY(50%);
         color: $light-grey;
+        text-shadow: $off-white 1px 1px 1px, $off-white -1px 1px 1px,
+          $off-white -1px -1px 1px, $off-white 1px -1px 1px;
       }
     }
 

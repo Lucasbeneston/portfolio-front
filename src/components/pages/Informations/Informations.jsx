@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import MenuContext from "../../../contexts/MenuContext";
 
+import Tech from "../../atoms/Tech/Tech";
 import JavaScriptSVG from "../../atoms/SVG/JavaScriptSVG";
 import SassSVG from "../../atoms/SVG/SassSVG";
 import NodeSVG from "../../atoms/SVG/NodeSVG";
@@ -47,42 +48,15 @@ export default function Informations() {
         <div>
           <h4 className="informations_about_title">💻 Technologies</h4>
           <div className="informations_about_technologies">
-            <div className="informations_about_technologies_item">
-              <JavaScriptSVG />
-              <h5>Javascript</h5>
-            </div>
-            <div className="informations_about_technologies_item">
-              <ReactSVG />
-              <h5>React</h5>
-            </div>
-            <div className="informations_about_technologies_item">
-              <SassSVG />
-              <h5>Sass | Scss</h5>
-            </div>
-            <div className="informations_about_technologies_item">
-              <NodeSVG />
-              <h5>Node</h5>
-            </div>
-            <div className="informations_about_technologies_item">
-              <ReactSVG />
-              <h5>React-Native</h5>
-            </div>
-            <div className="informations_about_technologies_item">
-              <SqlSVG />
-              <h5>SQL</h5>
-            </div>
-            <div className="informations_about_technologies_item">
-              <ExpressSVG />
-              <h5>Express</h5>
-            </div>
-            <div className="informations_about_technologies_item">
-              <ESLintSVG />
-              <h5>ESLint</h5>
-            </div>
-            <div className="informations_about_technologies_item">
-              <MochaSVG />
-              <h5>Mocha | Chaï</h5>
-            </div>
+            <Tech SVG={<JavaScriptSVG />} name="JavaScript" />
+            <Tech SVG={<ReactSVG />} name="React" />
+            <Tech SVG={<SassSVG />} name="Sass | Scss" />
+            <Tech SVG={<NodeSVG />} name="Node" />
+            <Tech SVG={<ReactSVG />} name="React-Native" />
+            <Tech SVG={<SqlSVG />} name="SQL" />
+            <Tech SVG={<ExpressSVG />} name="Express" />
+            <Tech SVG={<ESLintSVG />} name="ESLint" />
+            <Tech SVG={<MochaSVG />} name="Mocha | Chaï" />
           </div>
         </div>
 
