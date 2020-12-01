@@ -45,13 +45,15 @@ export default function Informations() {
       </div>
 
       <div className="informations_about">
-        <div>
-          <h4 className="informations_about_title">💻 Technologies</h4>
-          <div className="informations_about_technologies">
+        <div className="informations_about_technologies">
+          <h4 className="informations_about_technologies_title">
+            💻 Technologies
+          </h4>
+          <div className="informations_about_technologies_items">
             <Tech SVG={<JavaScriptSVG />} name="JavaScript" />
             <Tech SVG={<ReactSVG />} name="React" />
-            <Tech SVG={<SassSVG />} name="Sass | Scss" />
             <Tech SVG={<NodeSVG />} name="Node" />
+            <Tech SVG={<SassSVG />} name="Sass | Scss" />
             <Tech SVG={<ReactSVG />} name="React-Native" />
             <Tech SVG={<SqlSVG />} name="SQL" />
             <Tech SVG={<ExpressSVG />} name="Express" />
@@ -60,24 +62,30 @@ export default function Informations() {
           </div>
         </div>
 
-        <div>
-          <h4 className="informations_about_title">👨‍💻 A propos de moi</h4>
-          <p className="informations_about_paragraphe">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            quaerat voluptatum architecto debitis eius dignissimos ipsam
-            reiciendis suscipit. Eos nisi repellendus ad quibusdam labore ipsam
-            officiis voluptatibus inventore amet vero.
-          </p>
-        </div>
+        <div className="informations_about_description">
+          <div>
+            <h4 className="informations_about_description_title">
+              👨‍💻 A propos de moi
+            </h4>
+            <p className="informations_about_description_paragraphe">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              quaerat voluptatum architecto debitis eius dignissimos ipsam
+              reiciendis suscipit. Eos nisi repellendus ad quibusdam labore
+              ipsam officiis voluptatibus inventore amet vero.
+            </p>
+          </div>
 
-        <div>
-          <h4 className="informations_about_title">🔍 Ce que je recherche</h4>
-          <p className="informations_about_paragraphe">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            quaerat voluptatum architecto debitis eius dignissimos ipsam
-            reiciendis suscipit. Eos nisi repellendus ad quibusdam labore ipsam
-            officiis voluptatibus inventore amet vero.
-          </p>
+          <div>
+            <h4 className="informations_about_description_title">
+              🔍 Ce que je recherche
+            </h4>
+            <p className="informations_about_description_paragraphe">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              quaerat voluptatum architecto debitis eius dignissimos ipsam
+              reiciendis suscipit. Eos nisi repellendus ad quibusdam labore
+              ipsam officiis voluptatibus inventore amet vero.
+            </p>
+          </div>
         </div>
       </div>
     </div>
