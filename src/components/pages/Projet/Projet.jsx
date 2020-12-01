@@ -26,40 +26,51 @@ export default function Projet() {
         src={`${process.env.PUBLIC_URL}/images/${project.poster}`}
         alt={`Illustration du projet ${project.name}`}
       />
-      <div className="projet_informations">
-        <div className="projet_informations_link">
-          {project.link !== null ? (
-            <a className="projet_informations_link_true" href={project.link}>
-              Site
-            </a>
-          ) : (
-            <h4 className="projet_informations_link_null">Lien</h4>
-          )}
-          {project.repository !== null ? (
-            <a
-              className="projet_informations_link_true"
-              href={project.repository}
-            >
-              Github
-            </a>
-          ) : (
-            <h4 className="projet_informations_link_null">Github</h4>
-          )}
+
+      <div className="projet_container">
+        <div className="projet_informations">
+          <div className="projet_informations_link">
+            {project.link !== null ? (
+              <a className="projet_informations_link_true" href={project.link}>
+                Site
+              </a>
+            ) : (
+              <h4 className="projet_informations_link_null">Lien</h4>
+            )}
+            {project.repository !== null ? (
+              <a
+                className="projet_informations_link_true"
+                href={project.repository}
+              >
+                Github
+              </a>
+            ) : (
+              <h4 className="projet_informations_link_null">Github</h4>
+            )}
+          </div>
+          <div className="projet_informations_technologies">
+            {project.technology.map((technology) => technology)}
+          </div>
         </div>
-        <div className="projet_informations_technologies">
-          {project.technology.map((technology) => technology)}
+        <div className="projet_description">
+          <div className="projet_description_text">
+            <h5 className="projet_description_text_title">
+              Description du projet
+            </h5>
+            <p className="projet_description_text_paragraph">
+              {project.description}
+            </p>
+          </div>
+
+          {project.illustrations.map((illustration) => (
+            <img
+              className="projet_images"
+              src={`${process.env.PUBLIC_URL}/images/${illustration}`}
+              alt={`Illustration du projet ${project.name}`}
+            />
+          ))}
         </div>
       </div>
-      <div className="projet_description">
-        <p>{project.description}</p>
-      </div>
-      {project.illustrations.map((illustration) => (
-        <img
-          className="projet_images"
-          src={`${process.env.PUBLIC_URL}/images/${illustration}`}
-          alt={`Illustration du projet ${project.name}`}
-        />
-      ))}
     </div>
   );
 }

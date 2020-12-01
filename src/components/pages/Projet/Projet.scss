@@ -55,10 +55,29 @@
     }
   }
 
+  &_container {
+    width: 100%;
+
+    @include media(tablet) {
+      width: 80%;
+      display: flex;
+    }
+  }
+
   &_informations {
     padding: 10px 7.5vw;
     font-size: 1.3rem;
-    line-height: 2rem;
+
+    @include media(tablet) {
+      width: 25%;
+      height: fit-content;
+      padding: 10px 0;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: 1px solid $light-grey;
+    }
 
     &_link {
       display: flex;
@@ -83,16 +102,57 @@
       justify-content: center;
       flex-wrap: wrap;
       width: 100%;
+
+      @include media(tablet) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 
   &_description {
-    padding: 30px 7.5vw 40px;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    width: 100%;
+
+    @include media(tablet) {
+      width: 75%;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+    }
+
+    &_text {
+      padding: 30px 7.5% 40px;
+      line-height: 2.5rem;
+
+      &_title {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+      }
+
+      &_paragraph {
+        font-size: 1.5rem;
+        font-weight: lighter;
+      }
+
+      @include media(tablet) {
+        padding: 0px 12.5% 40px;
+      }
+    }
   }
 
   &_images {
-    padding: 2.5vw 7.5vw;
+    padding: 2.5% 7.5%;
+
+    @include media(tablet) {
+      padding: 20px 12.5%;
+      transition: 0.4s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.4s ease-in-out;
+      }
+    }
   }
 }
