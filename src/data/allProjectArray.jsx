@@ -29,7 +29,7 @@ const projects = [
     date: "Novembre 2020",
     poster: "MyFilms/myFilms.jpg",
     illustrations: ["MyFilms/myFilms.jpg", "MyFilms/myFilms.jpg"],
-    video: "./video/sourcedelavideo.mp4",
+    video: "iphone.mp4",
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ const projects = [
       "FredeluxAgency/fredeluxAgencyDesktopContact.jpg",
       "FredeluxAgency/fredeluxAgencyRecadré.jpg",
     ],
-    video: "./video/sourcedelavideo.mp4",
+    video: "macbook.mp4",
   },
   {
     id: 3,
@@ -77,7 +77,7 @@ const projects = [
     date: "Avril 2020",
     poster: "GameBoy/gameboy.png",
     illustrations: ["GameBoy/gameboy.png", "GameBoy/gameboy.png"],
-    video: "./video/sourcedelavideo.mp4",
+    video: "iphone.mp4",
   },
   {
     id: 4,
@@ -102,7 +102,7 @@ const projects = [
     date: "Septembre 2020",
     poster: "Airbnb/airbnb.png",
     illustrations: ["Airbnb/airbnb.png", "Airbnb/airbnb.png"],
-    video: "./video/sourcedelavideo.mp4",
+    video: "macbook.mp4",
   },
 
   {
@@ -126,7 +126,7 @@ const projects = [
     date: "Septembre 2020",
     poster: "Airbnb/airbnb.png",
     illustrations: ["Airbnb/airbnb.png", "Airbnb/airbnb.png"],
-    video: "./video/sourcedelavideo.mp4",
+    video: "iphone.mp4",
   },
 ];
 
