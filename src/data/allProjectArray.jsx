@@ -29,7 +29,7 @@ const projects = [
     date: "Novembre 2020",
     poster: "MyFilms/myFilms.jpg",
     illustrations: ["MyFilms/myFilms.jpg", "MyFilms/myFilms.jpg"],
-    video: "iphone.mp4",
+    video: null,
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ const projects = [
       "FredeluxAgency/fredeluxAgencyDesktopContact.jpg",
       "FredeluxAgency/fredeluxAgencyRecadré.jpg",
     ],
-    video: "macbook.mp4",
+    video: null,
   },
   {
     id: 3,
@@ -102,7 +102,7 @@ const projects = [
     date: "Septembre 2020",
     poster: "Airbnb/airbnb.png",
     illustrations: ["Airbnb/airbnb.png", "Airbnb/airbnb.png"],
-    video: "macbook.mp4",
+    video: null,
   },
 
   {
@@ -126,7 +126,7 @@ const projects = [
     date: "Septembre 2020",
     poster: "Airbnb/airbnb.png",
     illustrations: ["Airbnb/airbnb.png", "Airbnb/airbnb.png"],
-    video: "iphone.mp4",
+    video: "macbook.mp4",
   },
 ];
 
