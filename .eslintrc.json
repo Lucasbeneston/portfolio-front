@@ -8,13 +8,12 @@
   "parser": "babel-eslint",
   "extends": [
     "eslint:recommended",
-    "plugin:promise/recommended",
     "react-app",
     "airbnb",
     "prettier",
     "prettier/react"
   ],
-  "plugins": ["jsx-a11y", "promise", "react", "react-hooks", "prettier"],
+  "plugins": ["jsx-a11y", "react", "react-hooks", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
