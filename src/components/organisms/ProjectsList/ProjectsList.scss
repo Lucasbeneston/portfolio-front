@@ -34,6 +34,13 @@
       max-height: 300px;
       width: 100%;
       object-fit: cover;
+      filter: saturate(25%);
+      transition: filter 0.5s ease-in-out;
+
+      &:hover {
+        filter: none;
+        transition: all 0.5s ease-in-out;
+      }
 
       @include media(tablet) {
         height: 45vh;

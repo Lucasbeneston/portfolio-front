@@ -33,9 +33,9 @@ export default function Home() {
           <h2 className="home_header_container_title">
             Développeur Front-End React et React-native
           </h2>
-          <h3 className="home_header_container_subtitle">
+          {/* <h3 className="home_header_container_subtitle">
             A la recherche d'un emploi
-          </h3>
+          </h3> */}
         </div>
       </div>
       {width < 769 ? null : (

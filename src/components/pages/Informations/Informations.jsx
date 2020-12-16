@@ -68,10 +68,10 @@ export default function Informations() {
               👨‍💻 A propos de moi
             </h4>
             <p className="informations_about_description_paragraphe">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              quaerat voluptatum architecto debitis eius dignissimos ipsam
-              reiciendis suscipit. Eos nisi repellendus ad quibusdam labore
-              ipsam officiis voluptatibus inventore amet vero.
+              Je viens de terminer ma formation de développeur Fullstack
+              JavaScript chez Simplon.co, durant laquelle j’ai réalisé de
+              nombreux projets en mode Agile sur des technologies comme
+              JavaScript, React, Node, Sass, Express ou encore SQL.
             </p>
           </div>
 
@@ -80,10 +80,12 @@ export default function Informations() {
               🔍 Ce que je recherche
             </h4>
             <p className="informations_about_description_paragraphe">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              quaerat voluptatum architecto debitis eius dignissimos ipsam
-              reiciendis suscipit. Eos nisi repellendus ad quibusdam labore
-              ipsam officiis voluptatibus inventore amet vero.
+              Motivé et prêt à relever des défis, j’aime particulièrement créer
+              des interfaces utilisateur intuitives et efficaces, qui permettent
+              d’optimiser l’expérience utilisateur, quel qu’il soit. Je
+              recherche un projet challengeant, inspirant et à impact positif.
+              Vous êtes ou connaissez quelqu’un à la recherche d’un développeur
+              web rigoureux et curieux d'apprendre ? Contactez-moi !
             </p>
           </div>
         </div>
