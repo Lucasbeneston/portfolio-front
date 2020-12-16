@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, HashRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import MenuContext from "./contexts/MenuContext";
 import Nav from "./components/organisms/Nav/Nav";
 import Routes from "./components/Routes";
@@ -18,11 +18,9 @@ function App() {
   return (
     <Router>
       <MenuContext.Provider value={contextMenu}>
-        <HashRouter basename="/portfolio-front">
-          <Nav />
-          <Routes />
-          <Footer />
-        </HashRouter>
+        <Nav />
+        <Routes />
+        <Footer />
       </MenuContext.Provider>
     </Router>
   );
