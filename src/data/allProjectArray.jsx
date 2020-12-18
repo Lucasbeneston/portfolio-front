@@ -164,9 +164,9 @@ const projects = [
 
   {
     id: 5,
-    name: "Contrat Agency",
-    url: "contrat-agency",
-    tagline: "Description de Contrast Agency",
+    name: "Contrast Agency",
+    url: "contrast-agency",
+    tagline: "Agence web fictive",
     client: "Projet de formation",
     technology: [
       <Tech SVG={<HtmlSVG />} name="HTML" />,
@@ -176,7 +176,7 @@ const projects = [
     repository: "https://github.com/Lucasbeneston/ContrastAgency",
     link: "https://lucasbeneston.github.io/ContrastAgency/",
     description:
-      "Pour ce projet, le client est une agence web qui souhaite réaliser son site internet (vitrine) de manière minimaliste, mais dont l’objectif principal est que le client rentre en contact avec elle par le biais d’un e- mail. Pour satisfaire le client, nous avons décidé de créer une identité visuelle minimaliste basée sur le contraste entre le noir et blanc et l’ajout d’une touche de couleur (selon le choix de l’utilisateur). De plus, pour simplifier la prise de contact, nous avons décidé de placer un formulaire de manière statique sur la partie droite du site, pour que l’utilisateur puisse avoir la possibilité à tout moment de contacter l’agence.",
+      "Pour ce projet, le client est une agence web (fictive) qui souhaite réaliser son site internet (vitrine) de manière minimaliste, mais dont l’objectif principal est que le client rentre en contact avec elle par le biais d’un e-mail. Pour satisfaire le client, j'ai décidé de créer une identité visuelle minimaliste basée sur le contraste entre le noir et blanc et l’ajout d’une touche de couleur (selon le choix de l’utilisateur). De plus, pour simplifier la prise de contact, j'ai décidé de placer un formulaire de manière statique sur la partie droite du site, pour que l’utilisateur puisse avoir la possibilité à tout moment de contacter l’agence.",
     type: "Application web",
     date: "Mars 2020",
     poster: "ContrastAgency/Contrast_agency.jpg",
@@ -191,7 +191,7 @@ const projects = [
 
   {
     id: 6,
-    name: "Netflix",
+    name: "Netflix clone",
     url: "netflix-clone",
     tagline: "Reproduction des certaines fonctionnalités de Netflix",
     client: "Projet de formation",
