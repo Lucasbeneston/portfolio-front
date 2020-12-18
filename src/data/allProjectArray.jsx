@@ -152,7 +152,7 @@ const projects = [
       "L’objectif de ce projet était de reproduire les fonctionnalités de bases du site Airbnb, c’est-à-dire l’inscription d’un utilisateur avec des rôles différents (touriste ou hôte), la connexion d’un utilisateur ou encore la recherche ou l’ajout d’un appartement.",
     type: "Application web",
     date: "Septembre 2020",
-    poster: "Airbnb/airbnb.jpg",
+    poster: "Airbnb/Airbnb.jpg",
     illustrations: [
       "Airbnb/Airbnb_laptop_mobile.jpg",
       "Airbnb/Airbnb_mobile.jpg",
