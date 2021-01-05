@@ -14,6 +14,34 @@ import ExpressSVG from "../components/atoms/SVG/ExpressSVG";
 const projects = [
   {
     id: 1,
+    name: "Bnw Unknown",
+    url: "bnw-unknown",
+    tagline: "Photographie argentique noir et blanc",
+    client: "Projet personnel",
+    technology: [
+      <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
+      <Tech SVG={<ReactSVG />} name="React" />,
+      <Tech SVG={<SassSVG />} name="Sass | Scss" />,
+      <Tech SVG={<NodeSVG />} name="Node" />,
+      <Tech SVG={<ESLintSVG />} name="ESLint" />,
+    ],
+    repository: "https://github.com/Lucasbeneston/bnw_unknown",
+    link: "https://bnw-unknown.herokuapp.com/",
+    description: `Étant photographe amateur à mes heures perdues, j’ai décidé de créer un site pour présenter quelques-unes de mes photos, réalisées avec d’anciens appareils argentiques. Pour rendre le site plus interactif, j’ai voulu permettre à l’utilisateur de « rentrer » dans d’une chambre noire, en inversant les couleurs des photos, comme s’il s’agissait de négatifs.`,
+    type: "Application web",
+    date: "Novembre 2020",
+    poster: "BnwUnknown/Bnw_unknown_laptop.jpg",
+    illustrations: [
+      "BnwUnknown/Bnw_unknown_laptop_black.jpg",
+      "BnwUnknown/Bnw_unknown_selected.jpg",
+      "BnwUnknown/Bnw_unknown_smartphone.jpg",
+      "BnwUnknown/Bnw_unknown_smartphone_black.jpg",
+      "BnwUnknown/Bnw_unknown_laptop.jpg",
+    ],
+    video: null,
+  },
+  {
+    id: 2,
     name: "Fredelux Agency",
     url: "fredelux-agency",
     tagline:
@@ -29,9 +57,8 @@ const projects = [
       <Tech SVG={<ESLintSVG />} name="ESLint" />,
       <Tech SVG={<MochaSVG />} name="Mocha | Chaï" />,
     ],
-    repository: "https://github.com/fredeluxagency/client-front-office",
-    link: null,
-    // link: "http://fredeluxagency.com/",
+    repository: null,
+    link: "http://fredeluxagency.com/",
     description: `La Fredelux Agency est une agence événementiel proposant un service de réservation de DJs pour tous types d’événements, mais également la création d’univers sonores sur-mesure. Le site internet de la Fredelux Agency s’adresse donc principalement aux organisateurs d’événements (et dans une moindre mesure aux particuliers) qui cherchent à réserver des DJs pour des événements, mais également aux propriétaires d’établissements (hôtels, restaurants, magasins, etc.) qui souhaitent créer une ambiance sonore sur-mesure. Le projet présenté ici est une refonte totale du site internet de la Fredelux Agency, c’est-à-dire autant à l’expérience utilisateur en simplifiant par exemple le processus de réservation des DJs, mais également visuellement, en uniformisant le design des différentes sections du site. Cette refonte générale fut accompagnée de la création d’une nouvelle identité visuelle correspondant à l’image de l’agence, avec notamment la création de nouveaux logos ou encore la réalisation de prints (cartes de visite). Enfin, de nouvelles fonctionnalités ont été ajoutées par rapport au site d’origine, avec la création d’un back- office permettant à un administrateur de créer, modifier ou supprimer des DJs directement depuis une interface sécurisée. Pour mener à bien ce projet, j’ai décidé de créer une API REST et d’utiliser Node.js pour le back-end, PostgresSQL pour la base de données et enfin de React.js (avec l’utilisation de SASS) pour le front-end.`,
     type: "Application web",
     date: "Novembre 2020",
@@ -48,10 +75,39 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
+    name: "Goweb store",
+    url: "goweb-store",
+    tagline: "Site de e-commerce fictif",
+    client: "Projet personnel",
+    technology: [
+      <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
+      <Tech SVG={<ReactSVG />} name="React" />,
+      <Tech SVG={<SassSVG />} name="Sass | Scss" />,
+      <Tech SVG={<NodeSVG />} name="Node" />,
+      <Tech SVG={<ESLintSVG />} name="ESLint" />,
+    ],
+    repository: "https://github.com/Lucasbeneston/goweb_store",
+    link: "https://goweb-store.herokuapp.com/",
+    description: `Goweb store est un projet Front-End de création d'un site de e-commerce fictif, dans le but de réaliser plusieurs fonctionnalités (gestion d'un panier, intégration, carrousel d'images, etc.). Réalisé en React, ce projet ne possède ni de back-end, ni de base de données et aucuns articles ne pourras être acheté !`,
+    type: "Application web",
+    date: "Décembre 2020",
+    poster: "Goweb/Goweb.jpg",
+    illustrations: [
+      "Goweb/Goweb_laptop.jpg",
+      "Goweb/Goweb_laptop_mobile.jpg",
+      "Goweb/Goweb_mobile.jpg",
+      "Goweb/Goweb_mobile_2.jpg",
+      "Goweb/Goweb.jpg",
+    ],
+    video: null,
+  },
+
+  {
+    id: 4,
     name: "Game Boy Color",
     url: "game-boy-color",
-    tagline: "Reproduction d'un Game Boy Color uniquement en CSS",
+    tagline: "Reproduction d'une Game Boy Color uniquement en CSS",
     client: "Projet personnel",
     technology: [
       <Tech SVG={<HtmlSVG />} name="HTML" />,
@@ -77,36 +133,7 @@ const projects = [
   },
 
   {
-    id: 3,
-    name: "Goweb store",
-    url: "goweb-store",
-    tagline: "Site de e-commerce fictif",
-    client: "Projet personnel",
-    technology: [
-      <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
-      <Tech SVG={<ReactSVG />} name="React" />,
-      <Tech SVG={<SassSVG />} name="Sass | Scss" />,
-      <Tech SVG={<NodeSVG />} name="Node" />,
-      <Tech SVG={<ESLintSVG />} name="ESLint" />,
-    ],
-    repository: "https://github.com/Lucasbeneston/goweb_store",
-    link: null,
-    description: `Goweb store est un projet Front-End de création d'un site de e-commerce fictif, dans le but de réaliser plusieurs fonctionnalités (gestion d'un panier, intégration, carrousel d'images, etc.). Réalisé en React, ce projet ne possède ni de back-end, ni de base de données et aucuns articles ne pourras être acheté !`,
-    type: "Application web",
-    date: "Décembre 2020",
-    poster: "Goweb/Goweb.jpg",
-    illustrations: [
-      "Goweb/Goweb_laptop.jpg",
-      "Goweb/Goweb_laptop_mobile.jpg",
-      "Goweb/Goweb_mobile.jpg",
-      "Goweb/Goweb_mobile_2.jpg",
-      "Goweb/Goweb.jpg",
-    ],
-    video: null,
-  },
-
-  {
-    id: 4,
+    id: 5,
     name: "MyFilms",
     url: "my-films",
     tagline: "Application React-Native sur le thème du cinéma",
@@ -132,10 +159,10 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 6,
     name: "AirBnb clone",
     url: "airbnb-clone",
-    tagline: "Reproduction des certaines fonctionnalités de AirBnb",
+    tagline: "Reproduction de certaines fonctionnalités de AirBnb",
     client: "Projet de formation",
     technology: [
       <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
@@ -163,7 +190,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 7,
     name: "Contrast Agency",
     url: "contrast-agency",
     tagline: "Agence web fictive",
@@ -190,10 +217,10 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 8,
     name: "Netflix clone",
     url: "netflix-clone",
-    tagline: "Reproduction des certaines fonctionnalités de Netflix",
+    tagline: "Reproduction de certaines fonctionnalités de Netflix",
     client: "Projet de formation",
     technology: [
       <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
@@ -218,7 +245,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 9,
     name: "Maquette responsive",
     url: "maquette-responsive",
     tagline: "Intégration de maquettes mobile, tablet et desktop",
