@@ -13,6 +13,7 @@ export default function ProjectsList({ endArray }) {
       (video) => video.currentSrc === videoHover
     );
     if (videosArray !== undefined) {
+      videosArray.currentTime = 0;
       videosArray.play();
     }
   };
@@ -21,6 +22,7 @@ export default function ProjectsList({ endArray }) {
     const videosArray = Array.from(videos).find(
       (video) => video.currentSrc === videoHover
     );
+    videosArray.currentTime = 0;
     videosArray.pause();
   };
 

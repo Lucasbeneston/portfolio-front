@@ -32,6 +32,7 @@ export default function Informations() {
         src={`${process.env.PUBLIC_URL}/images/Lucas.jpg`}
         alt=""
       />
+
       <div className="informations_links">
         <a href="https://www.linkedin.com/in/beneston-lucas/">Linkedin</a>
         <a href="https://github.com/Lucasbeneston">Github</a>

@@ -77,14 +77,16 @@
       display: none;
 
       @include media(tablet) {
+        font-weight: 500;
+        font-size: 0.9rem;
         padding-left: 10px;
         display: block;
+        text-transform: uppercase;
         transition: padding-left 0.25s linear;
       }
     }
 
     & svg {
-      font-size: 1.2rem;
       height: 15px;
       transition: color 0.25s linear;
     }

@@ -31,7 +31,12 @@ export default function Projet() {
         <div className="projet_informations">
           <div className="projet_informations_link">
             {project.link !== null ? (
-              <a className="projet_informations_link_true" href={project.link}>
+              <a
+                className="projet_informations_link_true"
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Site
               </a>
             ) : (

@@ -38,7 +38,7 @@ const projects = [
       "BnwUnknown/Bnw_unknown_smartphone_black.jpg",
       "BnwUnknown/Bnw_unknown_laptop.jpg",
     ],
-    video: null,
+    video: "BnwUnknown/Bnw_unknown.mp4",
   },
   {
     id: 2,
@@ -71,7 +71,7 @@ const projects = [
       "FredeluxAgency/Fredelux_agency_mobile2.jpg",
       "FredeluxAgency/Fredelux_agency.jpg",
     ],
-    video: null,
+    video: "FredeluxAgency/FredeluxAgency.mp4",
   },
 
   {
@@ -100,7 +100,7 @@ const projects = [
       "Goweb/Goweb_mobile_2.jpg",
       "Goweb/Goweb.jpg",
     ],
-    video: null,
+    video: "Goweb/Goweb.mp4",
   },
 
   {
@@ -129,7 +129,7 @@ const projects = [
       "GameBoy/gameboy_5.jpg",
       "GameBoy/gameboy.jpg",
     ],
-    video: null,
+    video: "GameBoy/Gameboy.mp4",
   },
 
   {
