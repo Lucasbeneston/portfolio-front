@@ -19,10 +19,15 @@
 }
 
 @mixin burger-ronded-item {
-  background-color: $light-grey;
+  background-color: $grey;
   height: 4px;
   width: 4px;
   border-radius: 5px;
   position: absolute;
   transition: 0.25s ease;
+
+  &.open {
+    background-color: $off-white;
+    transition: color 0.5s ease-in-out;
+  }
 }

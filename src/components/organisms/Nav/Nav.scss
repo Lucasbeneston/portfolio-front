@@ -34,6 +34,62 @@
     }
   }
 
+  &_goBack {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-left: 4%;
+    color: $grey;
+    outline: none;
+    cursor: pointer;
+
+    &.open {
+      color: $off-white;
+      transition: color 0.5s ease-in-out;
+    }
+
+    @include media(tablet) {
+      background-color: $off-white;
+      position: fixed;
+      top: 10px;
+      left: 0;
+      margin-left: 2.5%;
+      border-radius: 15px;
+      padding-right: 15px;
+
+      &.open {
+        color: $grey;
+      }
+
+      &:hover {
+        color: $anthracite-grey;
+        // transition: color 0.25s ease-in-out;
+
+        & span {
+          padding-left: 5px;
+          transition: padding-left 0.25s linear, color 0.25s linear;
+        }
+      }
+    }
+
+    & span {
+      display: none;
+
+      @include media(tablet) {
+        padding-left: 10px;
+        display: block;
+        transition: padding-left 0.25s linear;
+      }
+    }
+
+    & svg {
+      font-size: 1.2rem;
+      height: 15px;
+      transition: color 0.25s linear;
+    }
+  }
+
   &_title {
     position: absolute;
     top: 50%;
