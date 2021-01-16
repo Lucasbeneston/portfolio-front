@@ -154,10 +154,12 @@
     @include media(tablet) {
       display: flex;
       justify-content: center;
-      width: 100%;
+      text-align: center;
+      width: 25%;
       align-items: center;
       height: 10vh;
       margin: 0;
+      margin-left: 37.5%;
       position: relative;
 
       &:hover {
