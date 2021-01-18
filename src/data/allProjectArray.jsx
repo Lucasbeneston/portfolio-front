@@ -29,7 +29,7 @@ const projects = [
     link: "https://bnw-unknown.herokuapp.com/",
     description: `Étant photographe amateur à mes heures perdues, j’ai décidé de créer un site pour présenter quelques-unes de mes photos, réalisées avec d’anciens appareils argentiques. Pour rendre le site plus interactif, j’ai voulu permettre à l’utilisateur de « rentrer » dans d’une chambre noire, en inversant les couleurs des photos, comme s’il s’agissait de négatifs.`,
     type: "Application web",
-    date: "Novembre 2020",
+    date: "Janvier 2021",
     poster: "BnwUnknown/Bnw_unknown_laptop.jpg",
     illustrations: [
       "BnwUnknown/Bnw_unknown_laptop_black.jpg",
