@@ -14,6 +14,36 @@ import ExpressSVG from "../components/atoms/SVG/ExpressSVG";
 const projects = [
   {
     id: 1,
+    name: "Space Unicorn Game",
+    url: "space-unicorn-game",
+    tagline: "Une Licorne dans l'espace ?!",
+    client: "Projet personnel",
+    technology: [
+      <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
+      <Tech SVG={<ReactSVG />} name="React" />,
+      <Tech SVG={<SassSVG />} name="Sass | Scss" />,
+      <Tech SVG={<NodeSVG />} name="Node" />,
+      <Tech SVG={<ESLintSVG />} name="ESLint" />,
+    ],
+    repository: "https://github.com/Lucasbeneston/space-unicorn-game",
+    link: "https://space-unicorn-game.herokuapp.com/",
+    description: `Pour ce projet, je me suis inspiré du T-Rex game de Google, mais en y apportant une petite touche de « fantaisie ». J’ai remplacé le T-rex par une Licorne qui sort d’une rave party dans l’espace et qui évite un virus pour rentrer chez elle avant le couvre-feu. (Toute ressemblance avec l’actualité de la Covid 19 est fortuite… ou pas.).
+    
+    J'ai réalisées plusieurs fonctionalités durant ce projet comme l'action « jump » de la Licorne, la création d’obstacles aléatoirement dans un intervalle de temps, l'accélération progressive de la vitesse des obstacles, la gestion du « high score » en LocalStorage ou encore la gestion « ON/OFF » des effets sonores et de l’atmosphère musicale.`,
+    type: "Application web",
+    date: "Janvier 2021",
+    poster: "UnicornGame/SpaceUnicorn.jpg",
+    illustrations: [
+      "UnicornGame/SpaceUnicorn_Laptop_start.png",
+      "UnicornGame/SpaceUnicorn_Laptop_play.png",
+      "UnicornGame/SpaceUnicorn_Laptop_gameover.png",
+      "UnicornGame/SpaceUnicorn_smartphone.png",
+      "UnicornGame/SpaceUnicorn.jpg",
+    ],
+    video: "UnicornGame/Unicorn_game.mp4",
+  },
+  {
+    id: 1,
     name: "Bnw Unknown",
     url: "bnw-unknown",
     tagline: "Photographie argentique noir et blanc",
@@ -240,33 +270,6 @@ const projects = [
       "Netflix/Netflix_desktop_tablet.jpg",
       "Netflix/Netflix_tablet.jpg",
       "Netflix/Netflix.jpg",
-    ],
-    video: null,
-  },
-
-  {
-    id: 9,
-    name: "Maquette responsive",
-    url: "maquette-responsive",
-    tagline: "Intégration de maquettes mobile, tablet et desktop",
-    client: "Projet de formation",
-    technology: [
-      <Tech SVG={<HtmlSVG />} name="HTML" />,
-      <Tech SVG={<CssSVG />} name="CSS" />,
-    ],
-    repository:
-      "https://github.com/Lucasbeneston/P3_C2_Interface_statique_adaptable",
-    link: "https://lucasbeneston.github.io/P3_C2_Interface_statique_adaptable/",
-    description:
-      "L’objectif de ce projet était de réaliser une interface utilisateur web statique et adaptable à partir d’une maquette responsive (smartphone, tablette et ordinateur) en utilisant les méthodes de mise en page Flexbox et/ou CSS Grid. Respect des règles d'accessibilité (OPQUAST).",
-    type: "Application web",
-    date: "Septembre 2020",
-    poster: "MaquetteResponsive/Maquette_responsive.jpg",
-    illustrations: [
-      "MaquetteResponsive/Maquette_responsive_desktop_tablet.jpg",
-      "MaquetteResponsive/Maquette_responsive_mobile.jpg",
-      "MaquetteResponsive/Maquette_responsive_tablet.jpg",
-      "MaquetteResponsive/Maquette_responsive.jpg",
     ],
     video: null,
   },
