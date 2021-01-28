@@ -179,11 +179,11 @@ const projects = [
       "Application React Native (fictive) sur le thème du cinéma. Pour ce projet, j'ai décidé d'exploiter l'API de The Movie Database (TMDb) pour permettre à un utilisateur de rechercher un film selon son nom et de créer une liste de ses films préférés.",
     type: "Application mobile",
     date: "Novembre 2020",
-    poster: "MyFilms/myfilms.jpg",
+    poster: "MyFilms/myfilms_illustration.jpg",
     illustrations: [
       "MyFilms/myfilms_list.jpg",
       "MyFilms/myfilms_detail.jpg",
-      "MyFilms/myfilms.jpg",
+      "MyFilms/myfilms_illustration.jpg",
     ],
     video: null,
   },
