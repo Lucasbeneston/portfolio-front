@@ -10,10 +10,39 @@ import SqlSVG from "../components/atoms/SVG/SqlSVG";
 import ESLintSVG from "../components/atoms/SVG/ESLintSVG";
 import MochaSVG from "../components/atoms/SVG/MochaSVG";
 import ExpressSVG from "../components/atoms/SVG/ExpressSVG";
+import StyledComponents from "../components/atoms/SVG/StyledComponents";
 
 const projects = [
   {
     id: 1,
+    name: "Find Me A Movie",
+    url: "find-me-a-movie",
+    tagline: "Le meilleur moyen de trouver un film à regarder",
+    client: "Projet personnel",
+    technology: [
+      <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
+      <Tech SVG={<ReactSVG />} name="React" />,
+      <Tech SVG={<StyledComponents />} name="Styled-components" />,
+      <Tech SVG={<NodeSVG />} name="Node" />,
+      <Tech SVG={<ESLintSVG />} name="ESLint" />,
+    ],
+    repository: "https://github.com/Lucasbeneston/find-me-a-movie",
+    link: "https://find-me-a-movie.herokuapp.com/",
+    description: `Est-ce que comme moi, parfois il vous arrive de galérer à trouver un film à regarder sur les différentes plateformes de streaming ? Pour résoudre ce problème, j’ai eu l’idée de créer un site qui sélectionne de manière aléatoire des films parmi une liste de plus de 8000 films les mieux notés (depuis l'API TMDb) !`,
+    type: "Application web",
+    date: "Février 2021",
+    poster: "FindMeAMovie/FindMeAMovie.jpg",
+    illustrations: [
+      "FindMeAMovie/FindMeAMovie_smartphone_home.jpg",
+      "FindMeAMovie/FindMeAMovie_smartphone_search.jpg",
+      "FindMeAMovie/FindMeAMovie_laptop_home.jpg",
+      "FindMeAMovie/FindMeAMovie_laptop_search.jpg",
+      "FindMeAMovie/FindMeAMovie.jpg",
+    ],
+    video: null,
+  },
+  {
+    id: 2,
     name: "Space Unicorn Game",
     url: "space-unicorn-game",
     tagline: "Une Licorne dans l'espace ?!",
@@ -43,7 +72,7 @@ const projects = [
     video: "UnicornGame/Unicorn_game.mp4",
   },
   {
-    id: 1,
+    id: 3,
     name: "Bnw Unknown",
     url: "bnw-unknown",
     tagline: "Photographie argentique noir et blanc",
@@ -71,7 +100,7 @@ const projects = [
     video: "BnwUnknown/Bnw_unknown.mp4",
   },
   {
-    id: 2,
+    id: 4,
     name: "Fredelux Agency",
     url: "fredelux-agency",
     tagline:
@@ -105,7 +134,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 5,
     name: "Goweb store",
     url: "goweb-store",
     tagline: "Site de e-commerce fictif",
@@ -134,7 +163,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 6,
     name: "Game Boy Color",
     url: "game-boy-color",
     tagline: "Reproduction d'une Game Boy Color uniquement en CSS",
@@ -163,7 +192,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 7,
     name: "MyFilms",
     url: "my-films",
     tagline: "Application React-Native sur le thème du cinéma",
@@ -189,7 +218,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 8,
     name: "AirBnb clone",
     url: "airbnb-clone",
     tagline: "Reproduction de certaines fonctionnalités de AirBnb",
@@ -220,7 +249,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 9,
     name: "Contrast Agency",
     url: "contrast-agency",
     tagline: "Agence web fictive",
@@ -242,34 +271,6 @@ const projects = [
       "ContrastAgency/Contrast_agency_mobile_black.jpg",
       "ContrastAgency/Contrast_agency_mobile_white.jpg",
       "ContrastAgency/Contrast_agency.jpg",
-    ],
-    video: null,
-  },
-
-  {
-    id: 8,
-    name: "Netflix clone",
-    url: "netflix-clone",
-    tagline: "Reproduction de certaines fonctionnalités de Netflix",
-    client: "Projet de formation",
-    technology: [
-      <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
-      <Tech SVG={<SassSVG />} name="Sass | Scss" />,
-      <Tech SVG={<NodeSVG />} name="Node" />,
-      <Tech SVG={<SqlSVG />} name="SQL" />,
-      <Tech SVG={<ExpressSVG />} name="Express" />,
-    ],
-    repository: "https://github.com/Lucasbeneston/NetflixClone",
-    link: "https://lucasbeneston.github.io/NetflixClone/",
-    description:
-      "Reproduction de la page d'accueil de Netflix en utilisant l'API DBmovie. Mise en place de différentes options comme la possibilité de  rechercher un film dans la barre de recherche, d'afficher une modale avec les informations des films, etc.",
-    type: "Application web",
-    date: "Septembre 2020",
-    poster: "Netflix/Netflix.jpg",
-    illustrations: [
-      "Netflix/Netflix_desktop_tablet.jpg",
-      "Netflix/Netflix_tablet.jpg",
-      "Netflix/Netflix.jpg",
     ],
     video: null,
   },
