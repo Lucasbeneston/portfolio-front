@@ -15,31 +15,33 @@ import StyledComponents from "../components/atoms/SVG/StyledComponents";
 const projects = [
   {
     id: 1,
-    name: "Find Me A Movie",
-    url: "find-me-a-movie",
-    tagline: "Le meilleur moyen de trouver un film à regarder",
+    name: "Kazidomi - Application bio e-commerce",
+    url: "kazidomi-app-bio-e-commerce",
+    tagline: "Application e-commerce fictive",
     client: "Projet personnel",
     technology: [
       <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
+      <Tech SVG={<ReactSVG />} name="React-Native" />,
       <Tech SVG={<ReactSVG />} name="React" />,
       <Tech SVG={<StyledComponents />} name="Styled-components" />,
       <Tech SVG={<NodeSVG />} name="Node" />,
-      <Tech SVG={<ESLintSVG />} name="ESLint" />,
     ],
-    repository: "https://github.com/Lucasbeneston/find-me-a-movie",
-    link: "https://find-me-a-movie.herokuapp.com/",
-    description: `Est-ce que comme moi, parfois il vous arrive de galérer à trouver un film à regarder sur les différentes plateformes de streaming ? Pour résoudre ce problème, j’ai eu l’idée de créer un site qui sélectionne de manière aléatoire des films parmi une liste de plus de 8000 films les mieux notés (depuis l'API TMDb) !`,
-    type: "Application web",
+    repository: "https://github.com/Lucasbeneston/app-bio-react-native",
+    link: null,
+    description: `A travers ce projet, j’ai voulu imaginer ce à quoi pourrait ressembler l’application mobile de Kazidomi, le e-commerce numéro 1 des produits biologiques et bien-être à petits prix. L'application est composée de 3 sections : "Blog", "Boutique" et "Adhésion". Le but était de simplifier au maximum le parcours de l'utilisateur dans son processus d'achat, mais également de l'inciter à devenir membre, pour profiter de réduction allant de 20 à 50% sur la totalité de la boutique.
+    `,
+    type: "Application mobile",
     date: "Février 2021",
-    poster: "FindMeAMovie/FindMeAMovie.jpg",
+    poster: "Kazidomi/KazidomiPoster.jpg",
     illustrations: [
-      "FindMeAMovie/FindMeAMovie_smartphone_home.jpg",
-      "FindMeAMovie/FindMeAMovie_smartphone_search.jpg",
-      "FindMeAMovie/FindMeAMovie_laptop_home.jpg",
-      "FindMeAMovie/FindMeAMovie_laptop_search.jpg",
-      "FindMeAMovie/FindMeAMovie.jpg",
+      "Kazidomi/KazidomiHomeBlog.jpg",
+      "Kazidomi/KazidomiMember.jpg",
+      "Kazidomi/KazidomiHomeShopping.jpg",
+      "Kazidomi/KazidomiCart.jpg",
+      "Kazidomi/KazidomiPost.jpg",
+      "Kazidomi/KazidomiProductDetail.jpg",
     ],
-    video: null,
+    video: "Kazidomi/Kazidomi_v_fast.mp4",
   },
   {
     id: 2,
@@ -73,6 +75,34 @@ const projects = [
   },
   {
     id: 3,
+    name: "Find Me A Movie",
+    url: "find-me-a-movie",
+    tagline: "Le meilleur moyen de trouver un film à regarder",
+    client: "Projet personnel",
+    technology: [
+      <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
+      <Tech SVG={<ReactSVG />} name="React" />,
+      <Tech SVG={<StyledComponents />} name="Styled-components" />,
+      <Tech SVG={<NodeSVG />} name="Node" />,
+      <Tech SVG={<ESLintSVG />} name="ESLint" />,
+    ],
+    repository: "https://github.com/Lucasbeneston/find-me-a-movie",
+    link: "https://find-me-a-movie.herokuapp.com/",
+    description: `Est-ce que comme moi, parfois il vous arrive de galérer à trouver un film à regarder sur les différentes plateformes de streaming ? Pour résoudre ce problème, j’ai eu l’idée de créer un site qui sélectionne de manière aléatoire des films parmi une liste de plus de 8000 films les mieux notés (depuis l'API TMDb) !`,
+    type: "Application web",
+    date: "Février 2021",
+    poster: "FindMeAMovie/FindMeAMovie.jpg",
+    illustrations: [
+      "FindMeAMovie/FindMeAMovie_smartphone_home.jpg",
+      "FindMeAMovie/FindMeAMovie_smartphone_search.jpg",
+      "FindMeAMovie/FindMeAMovie_laptop_home.jpg",
+      "FindMeAMovie/FindMeAMovie_laptop_search.jpg",
+      "FindMeAMovie/FindMeAMovie.jpg",
+    ],
+    video: null,
+  },
+  {
+    id: 4,
     name: "Bnw Unknown",
     url: "bnw-unknown",
     tagline: "Photographie argentique noir et blanc",
@@ -100,7 +130,7 @@ const projects = [
     video: "BnwUnknown/Bnw_unknown.mp4",
   },
   {
-    id: 4,
+    id: 5,
     name: "Fredelux Agency",
     url: "fredelux-agency",
     tagline:
@@ -134,7 +164,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Goweb store",
     url: "goweb-store",
     tagline: "Site de e-commerce fictif",
@@ -163,7 +193,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Game Boy Color",
     url: "game-boy-color",
     tagline: "Reproduction d'une Game Boy Color uniquement en CSS",
@@ -192,7 +222,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     name: "MyFilms",
     url: "my-films",
     tagline: "Application React-Native sur le thème du cinéma",
@@ -218,7 +248,7 @@ const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     name: "AirBnb clone",
     url: "airbnb-clone",
     tagline: "Reproduction de certaines fonctionnalités de AirBnb",
@@ -249,7 +279,7 @@ const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     name: "Contrast Agency",
     url: "contrast-agency",
     tagline: "Agence web fictive",
