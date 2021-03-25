@@ -8,6 +8,7 @@ const images = [
   `${process.env.PUBLIC_URL}/images/Airbnb/Airbnb.jpg`,
   `${process.env.PUBLIC_URL}/images/ContrastAgency/Contrast_agency.jpg`,
   `${process.env.PUBLIC_URL}/images/BnwUnknown/Bnw_unknown_laptop.jpg`,
+  `${process.env.PUBLIC_URL}/images/TheSuperQuiz/TheSuperQuizPoster.jpg`,
 ];
 
 export default images;

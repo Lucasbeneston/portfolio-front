@@ -3,6 +3,7 @@ import Tech from "../components/atoms/Tech/Tech";
 import HtmlSVG from "../components/atoms/SVG/HtmlSVG";
 import CssSVG from "../components/atoms/SVG/CssSVG";
 import JavaScriptSVG from "../components/atoms/SVG/JavaScriptSVG";
+import TypeScriptSVG from "../components/atoms/SVG/TypeScriptSVG";
 import SassSVG from "../components/atoms/SVG/SassSVG";
 import NodeSVG from "../components/atoms/SVG/NodeSVG";
 import ReactSVG from "../components/atoms/SVG/ReactSVG";
@@ -15,6 +16,33 @@ import StyledComponents from "../components/atoms/SVG/StyledComponents";
 const projects = [
   {
     id: 1,
+    name: "The Super Quiz",
+    url: "the-super-quiz",
+    tagline: "Viens tester tes connaissances !",
+    client: "Projet personnel",
+    technology: [
+      <Tech SVG={<JavaScriptSVG />} name="JavaScript" />,
+      <Tech SVG={<ReactSVG />} name="React" />,
+      <Tech SVG={<TypeScriptSVG />} name="TypeScript" />,
+      <Tech SVG={<StyledComponents />} name="Styled-components" />,
+      <Tech SVG={<NodeSVG />} name="Node" />,
+    ],
+    repository: "https://github.com/Lucasbeneston/react-ts-quiz",
+    link: "https://the-super-quiz.herokuapp.com/",
+    description: `Application React & TypeScript de Quiz sur de nombreux sujets (Animaux, Livres, Sports, etc.) avec 3 niveaux de difficulté. Les questions proviennent de l'API Open Trivia Database et sont disponibles uniquement en anglais.`,
+    type: "Application web",
+    date: "Mars 2021",
+    poster: "TheSuperQuiz/TheSuperQuizPoster.jpg",
+    illustrations: [
+      "TheSuperQuiz/TheSuperQuiz_home_laptop.jpg",
+      "TheSuperQuiz/TheSuperQuiz_choice_laptop.jpg",
+      "TheSuperQuiz/TheSuperQuiz_home_mobile.jpg",
+      "TheSuperQuiz/TheSuperQuiz_choice_mobile.jpg",
+    ],
+    video: "TheSuperQuiz/TheSuperQuiz.mp4",
+  },
+  {
+    id: 2,
     name: "Kazidomi - Application bio e-commerce",
     url: "kazidomi-app-bio-e-commerce",
     tagline: "Application e-commerce fictive",
@@ -44,7 +72,7 @@ const projects = [
     video: "Kazidomi/Kazidomi_v_fast.mp4",
   },
   {
-    id: 2,
+    id: 3,
     name: "Space Unicorn Game",
     url: "space-unicorn-game",
     tagline: "Une Licorne dans l'espace ?!",
@@ -74,7 +102,7 @@ const projects = [
     video: "UnicornGame/Unicorn_game.mp4",
   },
   {
-    id: 3,
+    id: 4,
     name: "Find Me A Movie",
     url: "find-me-a-movie",
     tagline: "Le meilleur moyen de trouver un film à regarder",
@@ -102,7 +130,7 @@ const projects = [
     video: null,
   },
   {
-    id: 4,
+    id: 5,
     name: "Bnw Unknown",
     url: "bnw-unknown",
     tagline: "Photographie argentique noir et blanc",
@@ -130,7 +158,7 @@ const projects = [
     video: "BnwUnknown/Bnw_unknown.mp4",
   },
   {
-    id: 5,
+    id: 6,
     name: "Fredelux Agency",
     url: "fredelux-agency",
     tagline:
@@ -164,7 +192,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Goweb store",
     url: "goweb-store",
     tagline: "Site de e-commerce fictif",
@@ -177,7 +205,7 @@ const projects = [
       <Tech SVG={<ESLintSVG />} name="ESLint" />,
     ],
     repository: "https://github.com/Lucasbeneston/goweb_store",
-    link: "https://goweb-store.herokuapp.com/",
+    link: null,
     description: `Goweb store est un projet Front-End de création d'un site de e-commerce fictif, dans le but de réaliser plusieurs fonctionnalités (gestion d'un panier, intégration, carrousel d'images, etc.). Réalisé en React, ce projet ne possède ni de back-end, ni de base de données et aucuns articles ne pourras être acheté !`,
     type: "Application web",
     date: "Décembre 2020",
@@ -193,7 +221,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     name: "Game Boy Color",
     url: "game-boy-color",
     tagline: "Reproduction d'une Game Boy Color uniquement en CSS",
@@ -222,7 +250,7 @@ const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     name: "MyFilms",
     url: "my-films",
     tagline: "Application React-Native sur le thème du cinéma",
@@ -248,7 +276,7 @@ const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     name: "AirBnb clone",
     url: "airbnb-clone",
     tagline: "Reproduction de certaines fonctionnalités de AirBnb",
@@ -279,7 +307,7 @@ const projects = [
   },
 
   {
-    id: 10,
+    id: 11,
     name: "Contrast Agency",
     url: "contrast-agency",
     tagline: "Agence web fictive",

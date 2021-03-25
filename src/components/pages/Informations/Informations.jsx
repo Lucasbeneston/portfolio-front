@@ -10,6 +10,8 @@ import SqlSVG from "../../atoms/SVG/SqlSVG";
 import ESLintSVG from "../../atoms/SVG/ESLintSVG";
 import MochaSVG from "../../atoms/SVG/MochaSVG";
 import ExpressSVG from "../../atoms/SVG/ExpressSVG";
+import StyledComponents from "../../atoms/SVG/StyledComponents";
+import TypeScriptSVG from "../../atoms/SVG/TypeScriptSVG";
 
 import "./Informations.scss";
 
@@ -55,6 +57,8 @@ export default function Informations() {
             <Tech SVG={<ReactSVG />} name="React" />
             <Tech SVG={<NodeSVG />} name="Node" />
             <Tech SVG={<SassSVG />} name="Sass | Scss" />
+            <Tech SVG={<StyledComponents />} name="Styled Components" />
+            <Tech SVG={<TypeScriptSVG />} name="TypeScript" />
             <Tech SVG={<ReactSVG />} name="React-Native" />
             <Tech SVG={<SqlSVG />} name="SQL" />
             <Tech SVG={<ExpressSVG />} name="Express" />
