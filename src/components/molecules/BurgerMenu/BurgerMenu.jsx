@@ -4,7 +4,7 @@ import "./BurgerMenu.scss";
 
 export default function BurgerMenu({ onClick, open }) {
   return (
-    // eslint-disable-next-line jsx-a11y/click-events-have-key-events
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/control-has-associated-label
     <div
       className={`burger ${open ? "open" : ""}`}
       role="button"
